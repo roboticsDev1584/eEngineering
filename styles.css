@@ -284,12 +284,18 @@ body {
 .electromagnetismDg {
   position:relative;
   left:37vmin;
+  height:18vmin;
+  width:24vmin;
 }
 .dcMotorDg {
   position:relative;
   left:33vmin;
+  height:24vmin;
+  width:35vmin;
 }
 .dcMotorRealDg {
   position:relative;
   left:25vmin;
+  height:30vmin;
+  width:40vmin;
 }
