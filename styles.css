@@ -275,3 +275,21 @@ body {
     font-size:4vmin;
   }
 }
+.transistorDg {
+  position:relative;
+  height:20vmin;
+  width:40vmin;
+  left:25vmin;
+}
+.electromagnetismDg {
+  position:relative;
+  left:37vmin;
+}
+.dcMotorDg {
+  position:relative;
+  left:33vmin;
+}
+.dcMotorRealDg {
+  position:relative;
+  left:25vmin;
+}
