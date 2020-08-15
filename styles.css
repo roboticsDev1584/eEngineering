@@ -1,0 +1,274 @@
+body {
+  overflow:auto;
+  /*background-image: linear-gradient(white, yellow);*/
+  background-image: url('electricity.png');
+  backdrop-filter: brightness(50%);
+  /*font-family: "Roboto", sans-serif;*/
+  font-family: "Recursive", sans-serif;
+}
+.header {
+  z-index:1;
+  font-size:7vmin; /*1 vmin is 1% of the screen's smallest dim.*/
+  padding:2vmin;
+  text-align:center;
+  background-image: radial-gradient(white, yellow);
+  position:-webkit-sticky;
+  position:sticky;
+  top:0;
+}
+
+.createdBy{
+  border-radius:7vmin;
+  text-align:center;
+  background-color:#204060;
+  margin-top:2vmin;
+  color:#80ffff;
+  position:relative;
+  float:left;
+  display:inline;
+  margin-left: 4vmin;
+  width:85vmin;
+  height:37vmin;
+}
+.createdBy {
+  text-align:left;
+}
+.createdBy p{
+  font-size:3vmin;
+}
+.createdBy ul li{
+  font-size: 2vmin;
+  list-style-type:none;
+  text-align:left;
+  margin:0;
+  padding:0;
+  line-height:1.8;
+}
+/*.contact ul li.indent a {
+  text-decoration:none;
+  color: white;
+}
+.contact ul li.indent a:active, .contact ul li.indent a:hover {
+  text-decoration:underline;
+  color: yellow;
+}*/
+.createdBy ul li {
+  text-align:center;
+  text-decoration:underline;
+  user-select:none;
+}
+/*.contact ul li.indent {
+  font-size: 1.65vmin;
+}*/
+.createdBy ul li.bio {
+  text-decoration:none;
+  display:none;
+}
+
+.navbar {
+  z-index:0;
+  position:sticky;
+  font-size:3.5vmin;
+  background-color:mintcream;
+  width:27vmin;
+  height:50vmin;
+  display:block;
+  float:left;
+  top:15vmin;
+  margin-right:2vmin;
+  border-radius:3vmin;
+  text-align:center;
+}
+
+.navbar ul li a {
+  border-left:0.5vmin solid orange;
+  text-decoration:none;
+  color:lightgrey;
+}
+
+.navbar ul li a:hover {
+  color:black;
+}
+
+.navbar ul li {
+  word-break:break-all;
+  font-size:2.25vmin;
+  list-style-type:none;
+  margin:0;
+  padding:0;
+  text-align:left;
+  line-height:1.8;
+}
+
+.content {
+  position:relative;
+  display:block;
+  float:left;
+  width:95vmin;
+}
+
+.section {
+  border-radius:3vmin;
+  margin-top:4vmin;
+  position:relative;
+  opacity:1;
+  background-color:navy;
+  user-select:none;
+  text-align:center;
+  color:white;
+  font-size: 4vmin;
+  padding: 12vmin;
+  border-bottom:0.4vmin solid lightgreen;
+  transition: opacity 3s;
+}
+.section:hover {
+  opacity:0.7;
+}
+.sectionbody {
+  display:none;
+  background-color:grey;
+  transition: display 2s;
+  border-left: 0.4vmin solid orange;
+  border-bottom:0.4vmin solid orange;
+}
+.sectionbody h1, .sectionbody p{
+  font-size:2vmin;
+  background-color:grey;
+  color:white;
+  transition:color 2s;
+}
+.sectionbody h1{
+  font-size:4vmin;
+  text-align:center;
+}
+.sectionbody:hover, .sectionbody h1:hover, .sectionbody p:hover{
+  color:yellow;
+}
+#section1 {
+  background-image:url('ResistorPile1.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:52% 37%; //52% and 37%
+}
+#section2 {
+  background-image:url('TransistorPile2.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:50% 30%;
+}
+#section3 { /*4032px 3024px, 5000px 5000px*/
+  background-image:url('CapacitorPile1.jpg'), url('CapacitorPile1.jpg');
+  background-repeat: no-repeat;
+  background-size:130vmin 120vmin, 50000vmin 50000vmin;
+  background-position:70% 40%, 97% 97%;
+}
+#section4 {
+  background-image:url('electromagnetism2.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:50% 50%;
+}
+
+#section5 {
+  background-image:url('InductorPile1.jpg'), url('CapacitorPile1.jpg');
+  background-repeat: no-repeat;
+  background-size:130vmin 110vmin, 50000vmin 50000vmin;
+  background-position:50% 17%, 97% 97%;
+}
+#section6 {
+  background-image:url('MotorPile1.jpg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:40% 30%;
+}
+.eTitle {
+  position:absolute;
+  top:10vmin;
+  left:27vmin;
+  background-color:rgba(0,0,0,0.3);
+  width:40vmin;
+}
+.uArrow {
+  position:absolute;
+  height:7vmin;
+  width:7vmin;
+  bottom:0;
+  right:0;
+  filter:brightness(500%);
+  display:inline;
+}
+.dArrow {
+  display:none;
+  position:absolute;
+  height:7vmin;
+  width:7vmin;
+  bottom:0;
+  right:0;
+  filter:brightness(500%);
+}
+
+#uArrow4 {
+  filter:none;
+}
+
+#dArrow4 {
+  filter:none;
+}
+
+.showCode {
+  width:10vmin;
+  height:10vmin;
+  padding:0px 4vmin;
+}
+.navbar ul li.showCodeInfo {
+  word-break:break-word;
+  text-align:left;
+  font-size:1.5vmin;
+}
+.showCode2 {
+  display:none;
+  width:10vmin;
+  height:10vmin;
+  padding:0px 4vmin;
+}
+.codeBubble {
+  display:none;
+  color:white;
+  position:absolute;
+  max-width:55vmin;
+  max-height:20vmin;
+  overflow:auto;
+  font-size:2vmin;
+  z-index:4;
+  background-color:rgba(0,0,0,0.7);
+  border-radius:1vmin;
+  transition:color 2s;
+}
+.codeBubble:hover {
+  color:#00ff00;
+}
+#hNavbarCodeBubble{
+  position:sticky;
+  top:60.5vmin;
+  left:0;
+}
+#navbarCodeBubble{
+  position:sticky;
+  top:5vmin;
+  left:0;
+}
+#createdByCodeBubble{
+  position:absolute;
+  top:200vmin; /*This has to be 350% when using the laptop's screen or 250%
+  when using the monitor*/
+  left:5vmin;
+}
+/*Media screen modifications*/
+@media screen and (max-width: 1100px) {
+  .navbar {
+    position:static;
+    height:41vmin;
+    width:55vmin;
+    padding:0px 20vmin;
+  }
+}
